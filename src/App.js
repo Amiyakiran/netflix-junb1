@@ -9,6 +9,7 @@ function App() {
   return (
     <div>
        <Nav/>
+    /* request is imported from the request file  */
       <Banner fetchURL={requests.fetchNetflixOriginals}/>
       
       <Row isPoster={true} title="Trending Movies" fetchURL={requests.fetchTrending}/>
