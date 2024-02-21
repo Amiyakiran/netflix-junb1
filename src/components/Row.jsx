@@ -9,9 +9,9 @@ function Row({title,fetchURL, isPoster}) {
    /*  console.log(fetchURL); */
     
     const fetchData = async ()=>{
-      const {data} = await instance.get(fetchURL)
-      /* console.log(data.results); */
-      setAllMovies(data.results)
+      const response = await instance.get(fetchURL)
+      /* console.log(response.data.results); */
+      setAllMovies(response.data.results)
       }
          /* console.log(allMovies); */
 
